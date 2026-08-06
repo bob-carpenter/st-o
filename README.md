@@ -530,7 +530,9 @@ technology until they deemed humans stable.
 - **CONTROL** — You may choose not to feel a consequence. Once per
   scene, ignore the effect of a Level 1 harm or clear 1 stress. It
   surfaces later, and it will be worse. 
-
+  
+---
+  
 ### KLINGON
 
 Klingons are a ridge-headed, imposing humanoid species from the planet
@@ -577,6 +579,8 @@ resulted in a lasting alliance with Earth.
   harm you take each session to Level 1. 
 - **BAT'LETH DRILL** — +1d to FIGHT with a blade. You brought one
   aboard. Nobody has successfully asked you to stow it. 
+
+---
 
 ### HUMAN
 
@@ -626,6 +630,8 @@ and changing human history forever.
 - **TOO MANY FRIENDS** — Once per session, name someone you know on a
   station, colony, or ship you've just arrived at. They're
   real. Whether they're glad to see you is the GM's call. 
+
+---
 
 ### FERENGI
 
@@ -679,6 +685,8 @@ Dominion victory would destroy free trade.
 - **THE RULES** — Cite a Rule of Acquisition that applies. If the
   table agrees it fits, +1d. Each Rule works once per session.
 
+---
+
 ### ANDORIAN
 
 Andorians are a blue-skinned, antennaed humanoid species from the icy
@@ -725,6 +733,8 @@ co-found the Federation in 2161.
 - **DUELING TRADITION** — +1d to FIGHT one clearly named opponent, and
   you may not disengage until it's settled. 
 
+---
+
 ### TELLARITE
 
 Tellarites are a stout, pig-nosed humanoid species from Tellar Prime,
@@ -768,6 +778,8 @@ in the signing of the Federation Charter.
   endurance or load-bearing stubbornness. 
 - **NOSE FOR NONSENSE** — You know when someone is bluffing, though
   not what the truth is. 
+  
+---
 
 ### BETAZOID
 
@@ -818,6 +830,8 @@ vessel.
   to your face, you know. You do not know what's true. 
 - **PROJECTION** — Mark 2 stress to push a single feeling into another
   mind: calm, fear, doubt, resolve. 
+  
+---  
 
 ### BAJORAN
 
@@ -865,6 +879,8 @@ religious figurehead as the Prophets' Emissary.
   occupied or hostile-held place. You have done this before, at home. 
 - **PAGH** — You know when a person or place is spiritually wrong
   before you know why. The GM tells you plainly. 
+  
+---  
 
 ### ORION
 
@@ -913,7 +929,9 @@ backing pirate raids against Starfleet and the Klingons.
 - **UNDERESTIMATED** — Once per session, when someone dismisses you as
   decorative, take +1d on the roll that proves otherwise. 
   
-### El-Aurians
+---
+  
+### El-Aurian
 
 El-Aurians are a long-lived, physically human-like species from an
 unmapped home system, famously known across the galaxy as a race of
@@ -968,6 +986,8 @@ entities.
 - **OUT OF STEP** — You sometimes notice when time, causality, or
   reality has been altered. The GM tells you when something is wrong
   with the shape of events.
+  
+---  
 
 ### Denobulans
 
@@ -1021,6 +1041,8 @@ diplomacy to heal.
   met. Reserve confuses you.
 - **BROAD PRACTICE** — Choose a second field of expertise at
   creation. You may attempt its rolls at 1 dot. 
+  
+---  
 
 ### Trill
 
