@@ -831,7 +831,7 @@ vessel.
 - **PROJECTION** — Mark 2 stress to push a single feeling into another
   mind: calm, fear, doubt, resolve. 
   
----  
+---
 
 ### BAJORAN
 
@@ -931,7 +931,7 @@ backing pirate raids against Starfleet and the Klingons.
   
 ---
   
-### El-Aurian
+### EL-AURIAN
 
 El-Aurians are a long-lived, physically human-like species from an
 unmapped home system, famously known across the galaxy as a race of
@@ -989,7 +989,7 @@ entities.
   
 ---  
 
-### Denobulans
+### DENOBULAN
 
 Denobulans are a ridge-faced, highly expressive humanoid species from
 the planet Denobula Prime, famously known across the galaxy for their
@@ -1044,7 +1044,7 @@ diplomacy to heal.
   
 ---  
 
-### Trill
+### TRILL
 
 Trills are a spot-patterned humanoid species native to the planet
 Trill, famously known across the galaxy for their unique symbiotic
