@@ -1,0 +1,138 @@
+<div class="sheet-omega">
+
+<div class="sheet-header">
+  <h1>STAR TREK: OMEGA</h1>
+</div>
+
+<div class="sheet-row">
+  <label>Name <input type="text" name="attr_character_name" /></label>
+  <label>Playbook <input type="text" name="attr_playbook" /></label>
+  <label>Species <input type="text" name="attr_species" /></label>
+</div>
+
+<div class="sheet-row">
+  <label>Look <input type="text" name="attr_look" /></label>
+  <label>Homeworld <input type="text" name="attr_homeworld" /></label>
+  <label>Vice / Indulgence <input type="text" name="attr_vice" /></label>
+</div>
+
+<hr />
+
+<h2>ROLL</h2>
+
+<div class="sheet-row sheet-rollbar">
+  <button type="roll" name="roll_general" class="sheet-bigbutton"
+    value="&{template:default} {{name=?{What are you doing?|Action}}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1|8,{8d6}kh1}]]}}">
+    ROLL ACTION
+  </button>
+
+  <button type="roll" name="roll_resist" class="sheet-bigbutton"
+    value="&{template:default} {{name=RESIST}} {{Attribute=?{Attribute|Insight|Prowess|Resolve}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1} ]]}} {{Stress cost=6 minus your result}}">
+    RESIST
+  </button>
+
+  <button type="roll" name="roll_fortune" class="sheet-bigbutton"
+    value="&{template:default} {{name=FORTUNE}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1} ]]}}">
+    FORTUNE
+  </button>
+</div>
+
+<p class="sheet-hint">6 = success &nbsp;|&nbsp; 4-5 = partial &nbsp;|&nbsp; 1-3 = failure &nbsp;|&nbsp; two 6s = crit (hover the result to see all dice)</p>
+
+<hr />
+
+<h2>ACTIONS</h2>
+
+<div class="sheet-actions">
+
+  <div class="sheet-attrblock">
+    <div class="sheet-attrname">INSIGHT <span class="sheet-attrval"><input type="number" name="attr_insight" value="0" readonly /></span></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_scan" value="&{template:default} {{name=SCAN}} {{Rating=[[@{scan}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">SCAN</button><input type="number" name="attr_scan" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_analyze" value="&{template:default} {{name=ANALYZE}} {{Rating=[[@{analyze}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">ANALYZE</button><input type="number" name="attr_analyze" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_rig" value="&{template:default} {{name=RIG}} {{Rating=[[@{rig}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">RIG</button><input type="number" name="attr_rig" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_track" value="&{template:default} {{name=TRACK}} {{Rating=[[@{track}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">TRACK</button><input type="number" name="attr_track" value="0" min="0" max="4" class="sheet-dots" /></div>
+  </div>
+
+  <div class="sheet-attrblock">
+    <div class="sheet-attrname">PROWESS <span class="sheet-attrval"><input type="number" name="attr_prowess" value="0" readonly /></span></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_pilot" value="&{template:default} {{name=PILOT}} {{Rating=[[@{pilot}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">PILOT</button><input type="number" name="attr_pilot" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_slip" value="&{template:default} {{name=SLIP}} {{Rating=[[@{slip}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">SLIP</button><input type="number" name="attr_slip" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_fight" value="&{template:default} {{name=FIGHT}} {{Rating=[[@{fight}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">FIGHT</button><input type="number" name="attr_fight" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_breach" value="&{template:default} {{name=BREACH}} {{Rating=[[@{breach}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">BREACH</button><input type="number" name="attr_breach" value="0" min="0" max="4" class="sheet-dots" /></div>
+  </div>
+
+  <div class="sheet-attrblock">
+    <div class="sheet-attrname">RESOLVE <span class="sheet-attrval"><input type="number" name="attr_resolve" value="0" readonly /></span></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_tune" value="&{template:default} {{name=TUNE}} {{Rating=[[@{tune}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">TUNE</button><input type="number" name="attr_tune" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_lead" value="&{template:default} {{name=LEAD}} {{Rating=[[@{lead}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">LEAD</button><input type="number" name="attr_lead" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_connect" value="&{template:default} {{name=CONNECT}} {{Rating=[[@{connect}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">CONNECT</button><input type="number" name="attr_connect" value="0" min="0" max="4" class="sheet-dots" /></div>
+    <div class="sheet-actionrow"><button type="roll" name="roll_convince" value="&{template:default} {{name=CONVINCE}} {{Rating=[[@{convince}]]}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Result=[[ ?{Dice pool|0 dice - roll 2 keep LOWEST,{2d6}kl1|1,{1d6}kh1|2,{2d6}kh1|3,{3d6}kh1|4,{4d6}kh1|5,{5d6}kh1|6,{6d6}kh1|7,{7d6}kh1} ]]}}">CONVINCE</button><input type="number" name="attr_convince" value="0" min="0" max="4" class="sheet-dots" /></div>
+  </div>
+
+</div>
+
+<hr />
+
+<h2>CONDITION</h2>
+
+<div class="sheet-row">
+  <label>Stress (of 9) <input type="number" name="attr_stress" value="0" min="0" max="12" /></label>
+  <label>Trauma (of 4) <input type="number" name="attr_trauma" value="0" min="0" max="4" /></label>
+  <label>XP (of 8) <input type="number" name="attr_xp" value="0" min="0" max="8" /></label>
+  <label class="sheet-armor">Special Armor <input type="checkbox" name="attr_armor" value="1" /></label>
+</div>
+
+<label>Trauma taken <input type="text" name="attr_traumalist" placeholder="Cold / Haunted / Obsessed / Paranoid / Reckless / Soft / Unstable / Vicious" /></label>
+
+<div class="sheet-harm">
+  <div class="sheet-harmrow"><span class="sheet-harmlabel">3 SEVERE<br /><em>need help</em></span><input type="text" name="attr_harm3a" /><input type="text" name="attr_harm3b" /></div>
+  <div class="sheet-harmrow"><span class="sheet-harmlabel">2 MODERATE<br /><em>-1d</em></span><input type="text" name="attr_harm2a" /><input type="text" name="attr_harm2b" /></div>
+  <div class="sheet-harmrow"><span class="sheet-harmlabel">1 LESSER<br /><em>-1 effect</em></span><input type="text" name="attr_harm1a" /><input type="text" name="attr_harm1b" /></div>
+</div>
+
+<hr />
+
+<h2>SPECIAL ABILITIES</h2>
+<textarea name="attr_abilities" rows="8"></textarea>
+
+<h2>NOTES &amp; CLOCKS</h2>
+<textarea name="attr_notes" rows="8"></textarea>
+
+<hr />
+
+<h2>SHIP <span class="sheet-hint">(leave blank on officer sheets)</span></h2>
+
+<div class="sheet-row">
+  <label>Ship <input type="text" name="attr_shipname" /></label>
+  <label>Tier <input type="number" name="attr_shiptier" value="2" min="0" max="5" /></label>
+</div>
+
+<div class="sheet-row">
+  <label>Hull <select name="attr_sys_hull"><option value="0">OK</option><option value="1">Lesser</option><option value="2">Moderate</option><option value="3">Severe</option><option value="4">Destroyed</option></select></label>
+  <label>Drive <select name="attr_sys_drive"><option value="0">OK</option><option value="1">Lesser</option><option value="2">Moderate</option><option value="3">Severe</option><option value="4">Destroyed</option></select></label>
+  <label>Power <select name="attr_sys_power"><option value="0">OK</option><option value="1">Lesser</option><option value="2">Moderate</option><option value="3">Severe</option><option value="4">Destroyed</option></select></label>
+  <label>Sensors &amp; Comms <select name="attr_sys_sensors"><option value="0">OK</option><option value="1">Lesser</option><option value="2">Moderate</option><option value="3">Severe</option><option value="4">Destroyed</option></select></label>
+</div>
+
+<label>Shuttle / ship notes <textarea name="attr_shipnotes" rows="4"></textarea></label>
+
+</div>
+
+<script type="text/worker">
+const GROUPS = {
+  insight: ["scan","analyze","rig","track"],
+  prowess: ["pilot","slip","fight","breach"],
+  resolve: ["tune","lead","connect","convince"]
+};
+
+Object.keys(GROUPS).forEach(function(attr){
+  const actions = GROUPS[attr];
+  on(actions.map(a => "change:" + a).join(" ") + " sheet:opened", function(){
+    getAttrs(actions, function(v){
+      let rating = 0;
+      actions.forEach(function(a){ if (parseInt(v[a] || 0, 10) > 0) rating++; });
+      setAttrs({ [attr]: rating });
+    });
+  });
+});
+</script>

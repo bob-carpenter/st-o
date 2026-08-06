@@ -1,0 +1,178 @@
+.sheet-omega {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  color: #111;
+  max-width: 780px;
+}
+
+.sheet-omega h1 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin: 0 0 8px 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #111;
+}
+
+.sheet-omega h2 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 12px 0 6px 0;
+  color: #444;
+}
+
+.sheet-omega hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 12px 0;
+}
+
+.sheet-omega .sheet-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.sheet-omega label {
+  display: block;
+  flex: 1;
+  min-width: 130px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.sheet-omega input[type="text"],
+.sheet-omega input[type="number"],
+.sheet-omega select,
+.sheet-omega textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 3px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  color: #111;
+}
+
+.sheet-omega textarea {
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* Roll bar */
+.sheet-omega .sheet-rollbar button {
+  flex: 1;
+  padding: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: #111;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.sheet-omega .sheet-rollbar button:hover {
+  background: #444;
+}
+
+.sheet-omega .sheet-hint {
+  font-size: 10px;
+  color: #888;
+  margin: 4px 0 0 0;
+}
+
+/* Actions */
+.sheet-omega .sheet-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sheet-omega .sheet-attrblock {
+  flex: 1;
+  min-width: 200px;
+}
+
+.sheet-omega .sheet-attrname {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-bottom: 1px solid #111;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sheet-omega .sheet-attrval input {
+  width: 34px;
+  text-align: center;
+  background: #eee;
+  font-weight: bold;
+}
+
+.sheet-omega .sheet-actionrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.sheet-omega .sheet-actionrow button {
+  flex: 1;
+  text-align: left;
+  padding: 4px 6px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.sheet-omega .sheet-actionrow button:hover {
+  background: #ddd;
+}
+
+.sheet-omega .sheet-dots {
+  width: 42px;
+  text-align: center;
+}
+
+/* Condition */
+.sheet-omega .sheet-armor {
+  flex: 0 0 110px;
+}
+
+.sheet-omega .sheet-armor input {
+  width: auto;
+  transform: scale(1.4);
+  margin-left: 6px;
+}
+
+.sheet-omega .sheet-harm {
+  margin-top: 8px;
+}
+
+.sheet-omega .sheet-harmrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.sheet-omega .sheet-harmlabel {
+  flex: 0 0 90px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #666;
+  line-height: 1.2;
+}
+
+.sheet-omega .sheet-harmlabel em {
+  color: #999;
+  font-size: 8px;
+}
