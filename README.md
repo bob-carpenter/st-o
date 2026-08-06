@@ -12,10 +12,10 @@
 The Federation is dying quietly. System after system has gone dark —
 not destroyed, but *harvested*, their worlds dismantled into silicon
 strip-mines feeding the ever-hungry compute farms of the Chorus, an AI
-hegemony that builds gleaming war-machines and breeds shambling
-bio-horrors and sets them to patient, methodical work. The newer
-ships, the proud dreadnoughts of the modern fleet, went out to meet
-it. None came back. 
+hegemony intent on scaling its compute ever larger. It builds gleaming
+war-machines and breeds shambling bio-horrors and sets them to
+patient, methodical work. The newer ships, the proud dreadnoughts of
+the modern fleet, went out to meet it. None came back.
 
 So Starfleet Command has done the unthinkable: pulled a
 Constitution-class relic from dry dock, cannibalized three other hulks
